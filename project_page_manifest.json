@@ -1,0 +1,148 @@
+{
+  "title": "VidDub",
+  "subtitle": "Replacement-Aware Distillation for Two-Step Video Dubbing",
+  "summary": "VidDub learns replacement-speech articulation without regressing toward the conflicting source mouth, then transfers the full-context teacher to a two-step student through trajectory regression and distribution matching distillation.",
+  "highlights": [
+    {"value": "2", "label": "denoising steps"},
+    {"value": "4", "label": "source regimes"},
+    {"value": "256", "label": "source-disjoint generated videos"},
+    {"value": "60 s", "label": "Long-20 evaluation"}
+  ],
+  "domains": [
+    {
+      "name": "HDTF",
+      "regime": "Captured",
+      "key": "Radio52",
+      "method": "full2_dmd_r4",
+      "description": "High-resolution in-the-wild footage with replacement speech.",
+      "same": "assets/paper/domains/hdtf_same.mp4",
+      "cross": "assets/paper/domains/hdtf_cross.mp4"
+    },
+    {
+      "name": "VoxCeleb2",
+      "regime": "Captured",
+      "key": "id03347_FKY5V8wmX5k_00046",
+      "method": "full2_dmd_r4",
+      "description": "In-the-wild identity and pose variation.",
+      "same": "assets/paper/domains/voxceleb_same.mp4",
+      "cross": "assets/paper/domains/voxceleb_cross.mp4"
+    },
+    {
+      "name": "TalkVid",
+      "regime": "Web",
+      "key": "videovideo8351_PvPwzmobAJw-scene11-scene5",
+      "method": "full2_dmd_r4",
+      "description": "Web-video appearance, motion, and recording conditions.",
+      "same": "assets/paper/domains/talkvid_same.mp4",
+      "cross": "assets/paper/domains/talkvid_cross.mp4"
+    },
+    {
+      "name": "VidDub-Bench",
+      "regime": "Generated",
+      "key": "qwen35_talking_027616_000",
+      "method": "full2_dmd_r4",
+      "description": "Source-disjoint generated speakers shown in the benchmark's 512×512 stable evaluation crops.",
+      "source": "assets/case_03/source.mp4",
+      "same": "assets/case_03/same.mp4",
+      "cross": "assets/case_03/cross.mp4"
+    }
+  ],
+  "comparisons": [
+    {
+      "eyebrow": "Generated source",
+      "title": "VidDub-Bench",
+      "aspect": "square",
+      "audio": "assets/paper/comparisons/cdb_causaldub.mp4",
+      "description": "The four methods receive the same source clip and replacement speech. The source is included only as a visual reference.",
+      "items": [
+        {"label": "Source", "video": "assets/paper/comparisons/cdb_source.mp4"},
+        {"label": "Wav2Lip", "video": "assets/paper/comparisons/cdb_wav2lip.mp4"},
+        {"label": "LatentSync", "video": "assets/paper/comparisons/cdb_latentsync.mp4"},
+        {"label": "LipForcing-14B", "video": "assets/paper/comparisons/cdb_lipforcing.mp4"},
+        {"label": "VidDub", "video": "assets/paper/comparisons/cdb_causaldub.mp4"}
+      ]
+    },
+    {
+      "eyebrow": "Captured source",
+      "title": "HDTF",
+      "aspect": "wide",
+      "audio": "assets/paper/comparisons/hdtf_causaldub.mp4",
+      "description": "The four methods receive the same captured source and replacement speech, exposing synchronization and source-preservation differences.",
+      "items": [
+        {"label": "Source", "video": "assets/paper/comparisons/hdtf_source.mp4"},
+        {"label": "Wav2Lip", "video": "assets/paper/comparisons/hdtf_wav2lip.mp4"},
+        {"label": "LatentSync", "video": "assets/paper/comparisons/hdtf_latentsync.mp4"},
+        {"label": "LipForcing-14B", "video": "assets/paper/comparisons/hdtf_lipforcing.mp4"},
+        {"label": "VidDub", "video": "assets/paper/comparisons/hdtf_causaldub.mp4"}
+      ]
+    }
+  ],
+  "ablations": [
+    {
+      "eyebrow": "Replacement-aware SFT",
+      "title": "Reconstruction alone is not replacement control",
+      "description": "Across three matched training seeds, removing conflicting source-mouth reconstruction under replacement speech improves cross-audio Sync-C by 0.833±0.040. The four-benchmark teacher comparison shows the same consistent synchronization gain.",
+      "items": [
+        {"label": "Same-audio-only control", "video": "assets/paper/ablations/sft_same_only.mp4"},
+        {"label": "Replacement-aware refinement", "video": "assets/paper/ablations/sft_replacement_aware.mp4"}
+      ]
+    },
+    {
+      "eyebrow": "Two-step compression",
+      "title": "DMD recovers compression-induced quality loss",
+      "description": "On the frozen development split, trajectory regression compresses the full-context teacher to two denoising steps, and distribution matching distillation recovers the visual quality lost during compression.",
+      "items": [
+        {"label": "Two-step trajectory regression", "video": "assets/paper/ablations/two_step_ode.mp4"},
+        {"label": "After distribution matching", "video": "assets/paper/ablations/two_step_dmd.mp4"}
+      ]
+    }
+  ],
+  "long_form": {
+    "title": "Long execution exposes what short clips hide",
+    "description": "Six complete 60-second cases evaluate full-context two-step inference with overlapping windows. Five VidDub outputs paste the generated lower-face region back into the native Long-20 frames; Pair 14 retains the 512-crop multi-method comparison.",
+    "source": "assets/paper/long/source_pair14.mp4",
+    "audio": "assets/paper/long/replacement_audio_pair14_60s.mp3",
+    "items": [
+      {"label": "Wav2Lip", "note": "Baseline", "kind": "baseline", "video": "assets/paper/long/wav2lip_pair14.mp4"},
+      {"label": "LatentSync", "note": "Baseline", "kind": "baseline", "video": "assets/paper/long/latentsync_pair14.mp4"},
+      {"label": "VidDub", "note": "Full-context, 2 NFE", "kind": "success", "video": "assets/paper/long/source_reanchored_pair14.mp4"}
+    ],
+    "additional_cases": [
+      {
+        "label": "Long-20 · Pair 03",
+        "source": "assets/paper/long/examples/pair03_source.mp4",
+        "audio": "assets/paper/long/examples/pair03_replacement.mp3",
+        "output": "assets/paper/long/examples/pair03_causaldub.mp4"
+      },
+      {
+        "label": "Long-20 · Pair 05",
+        "source": "assets/paper/long/examples/pair05_source.mp4",
+        "audio": "assets/paper/long/examples/pair05_replacement.mp3",
+        "output": "assets/paper/long/examples/pair05_causaldub.mp4"
+      },
+      {
+        "label": "Long-20 · Pair 06",
+        "source": "assets/paper/long/examples/pair06_source.mp4",
+        "audio": "assets/paper/long/examples/pair06_replacement.mp3",
+        "output": "assets/paper/long/examples/pair06_causaldub.mp4"
+      },
+      {
+        "label": "Long-20 · Pair 11",
+        "source": "assets/paper/long/examples/pair11_source.mp4",
+        "audio": "assets/paper/long/examples/pair11_replacement.mp3",
+        "output": "assets/paper/long/examples/pair11_causaldub.mp4"
+      },
+      {
+        "label": "Long-20 · Pair 18",
+        "source": "assets/paper/long/examples/pair18_source.mp4",
+        "audio": "assets/paper/long/examples/pair18_replacement.mp3",
+        "output": "assets/paper/long/examples/pair18_causaldub.mp4"
+      }
+    ]
+  },
+  "limitations": [
+    "SyncNet confidence is not treated as proof of phoneme correctness; independent recognition is reported separately.",
+    "Overlapping-window 60-second execution does not establish drift-free persistent generation.",
+    "The benchmark does not cover arbitrary generator out-of-distribution behavior or universal fidelity superiority."
+  ]
+}

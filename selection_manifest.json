@@ -1,0 +1,721 @@
+{
+  "schema": 1,
+  "date": "2026-10-10",
+  "seed": 20261010,
+  "method": "full2_dmd_r4 / VidDub",
+  "population": 256,
+  "eligible": 253,
+  "selected": 20,
+  "excluded": {
+    "incomplete_metrics": 3,
+    "missing_video": 0,
+    "visual_failure": 0
+  },
+  "selection": "language-balanced quality gate followed by visual farthest-point sampling",
+  "cases": [
+    {
+      "rank": 1,
+      "case": "case_01",
+      "key": "qwen35_talking_020329_000",
+      "lang": "en",
+      "age_group": "adult",
+      "gender_group": "male",
+      "prompt": "A 50-year-old North American Indigenous man, rugged face, missing left hand (visible stump or prosthetic covered by sleeve), wearing a work apron. Background is a pottery studio with shelves, natural side light, high contrast. Faces camera directly, eyes focused intensely, holding an imaginary ball of clay with both hands (one real, one phantom gesture), hands below mouth. Speech text:",
+      "quality_score": 1.621497,
+      "diversity_gain": 0.0,
+      "metrics": {
+        "same_sync_c": 10.804023742675781,
+        "same_sync_d": 5.738363742828369,
+        "same_ssim": 0.9380728468344339,
+        "same_psnr": 33.01495497852978,
+        "cross_sync_c": 11.403924942016602,
+        "cross_sync_d": 5.287113189697266,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_01/source.mp4",
+        "same": "assets/case_01/same.mp4",
+        "cross": "assets/case_01/cross.mp4",
+        "audio_same": "assets/case_01/audio_same.wav",
+        "audio_cross": "assets/case_01/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_01.jpg",
+      "source_sha256": "ad5d7a4848340d3180fcbbfd1de3992d5d224cc2097a7356117114f6d7b8529f",
+      "same_sha256": "ab9b8cb00bf2fe37561b7d4b82ed071e01b3a947042f80652f8049f257f11bad",
+      "cross_sha256": "bfb653b2039f78ba7c2c19fcaad6c6823142d18f6977c4312b3a51481640a846",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 2,
+      "case": "case_02",
+      "key": "qwen35_talking_080085_000",
+      "lang": "en",
+      "age_group": "young",
+      "gender_group": "male",
+      "prompt": "A 16-year-old German boy, chest-up shot, facing the camera directly. He wears a hoodie, hood down. Background is a simple bedroom, dim lighting. His fingers rub together nervously, eyes looking at the lens but slightly watery, expression ashamed and vulnerable.",
+      "quality_score": 1.32037,
+      "diversity_gain": 0.0,
+      "metrics": {
+        "same_sync_c": 10.552334785461426,
+        "same_sync_d": 5.552397727966309,
+        "same_ssim": 0.9598226022900237,
+        "same_psnr": 33.28520851948421,
+        "cross_sync_c": 10.995071411132812,
+        "cross_sync_d": 5.874650955200195,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_02/source.mp4",
+        "same": "assets/case_02/same.mp4",
+        "cross": "assets/case_02/cross.mp4",
+        "audio_same": "assets/case_02/audio_same.wav",
+        "audio_cross": "assets/case_02/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_02.jpg",
+      "source_sha256": "3e73c4d7af39ed66a735ff099452c02b5a1463d9e7b003c2ea58be782c747975",
+      "same_sha256": "b8f2497da66bb7b3bf6e5abbc6f2988c8b162cd956d55ccce0e0f521aec93fad",
+      "cross_sha256": "5b1e6c5b97b4a364f5f60f1616dfa30a9bb3729f7ed40e5e0691de3363eb51d7",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 3,
+      "case": "case_03",
+      "key": "qwen35_talking_027616_000",
+      "lang": "en",
+      "age_group": "adult",
+      "gender_group": "male",
+      "prompt": "A 50-year-old Maori man with traditional facial tattoos (Ta moko), wearing a black t-shirt, standing in a green forest clearing. Natural dappled light filters through trees onto his face. He looks directly at the camera with deep respect, hand placed firmly over his heart. His expression is serious and grateful.",
+      "quality_score": 1.197329,
+      "diversity_gain": 2.128023,
+      "metrics": {
+        "same_sync_c": 9.833023071289062,
+        "same_sync_d": 6.948844909667969,
+        "same_ssim": 0.910142690661977,
+        "same_psnr": 29.211623164366603,
+        "cross_sync_c": 11.458112716674805,
+        "cross_sync_d": 6.013896465301514,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_03/source.mp4",
+        "same": "assets/case_03/same.mp4",
+        "cross": "assets/case_03/cross.mp4",
+        "audio_same": "assets/case_03/audio_same.wav",
+        "audio_cross": "assets/case_03/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_03.jpg",
+      "source_sha256": "9ddf23a8cf4a0914db9856cbbd1528510e930d0acd3b38084986334a64ac4906",
+      "same_sha256": "3e833ecb6e355210031b810ea05eef36c864b3d0a2b56a9f1f8d440ec80cf0a7",
+      "cross_sha256": "35f2941cc518948f23d2dd69d5df2aa15136e4024d11d6a2de5358a568fca2f7",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 4,
+      "case": "case_04",
+      "key": "qwen35_talking_008288_000",
+      "lang": "en",
+      "age_group": "adult",
+      "gender_group": "unspecified",
+      "prompt": "A twenty-year-old Swedish gender-fluid person with short pastel hair, wearing a comfortable grey hoodie. They are sitting on a bed in a minimalist bedroom, natural morning light from a side window. They look directly at the camera with soft, relaxed eyes. One hand gently pats their chest over the heart, rhythmically and slowly. Speech text:  Camera is chest-up, soft focus, face fully visible.",
+      "quality_score": 1.169726,
+      "diversity_gain": 1.841904,
+      "metrics": {
+        "same_sync_c": 7.236293792724609,
+        "same_sync_d": 6.782345771789551,
+        "same_ssim": 0.9493440586782596,
+        "same_psnr": 31.21915214019899,
+        "cross_sync_c": 11.278524398803711,
+        "cross_sync_d": 5.346569061279297,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_04/source.mp4",
+        "same": "assets/case_04/same.mp4",
+        "cross": "assets/case_04/cross.mp4",
+        "audio_same": "assets/case_04/audio_same.wav",
+        "audio_cross": "assets/case_04/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_04.jpg",
+      "source_sha256": "96641a6b9ce2be4a1f0b26d631bf13807bc1cc72bc923b1bd6975bf8466e3286",
+      "same_sha256": "a7dd8f19015ca1245117794c7b79e946f284a2fd96fb758fd98e36b309d2bdd0",
+      "cross_sha256": "e4a2e6f5b0c69aa6d2bb11f43ae37a18cf21014d76f70ba2edac0f676b0f3b15",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 5,
+      "case": "case_05",
+      "key": "qwen35_talking_057575_000",
+      "lang": "en",
+      "age_group": "young",
+      "gender_group": "female",
+      "prompt": "A 16-year-old Scottish girl sits in her bedroom, upper body shot, facing the camera directly with worried eye contact. She wears casual pajamas. Her hand touches her hair nervously. The lighting is soft indoor lamp light. Her expression is embarrassed and anxious.",
+      "quality_score": 1.026246,
+      "diversity_gain": 1.836181,
+      "metrics": {
+        "same_sync_c": 10.845818519592285,
+        "same_sync_d": 6.1776933670043945,
+        "same_ssim": 0.9237032194897665,
+        "same_psnr": 30.14873067965767,
+        "cross_sync_c": 11.712541580200195,
+        "cross_sync_d": 6.197626113891602,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_05/source.mp4",
+        "same": "assets/case_05/same.mp4",
+        "cross": "assets/case_05/cross.mp4",
+        "audio_same": "assets/case_05/audio_same.wav",
+        "audio_cross": "assets/case_05/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_05.jpg",
+      "source_sha256": "114eeccef2de0a5e31666c1e42e0e3a65fe607ccc68416010168642f312f96aa",
+      "same_sha256": "3555bf2a017d0a59a55a3b5a66bfa08a6fcbf786dfab33a8fc8342b25444f566",
+      "cross_sha256": "69f868e9d1921fdab4707e9f0ba6f0ba0add463708f98292eaec69d3b78aefda",
+      "presentation": "crop"
+    },
+    {
+      "rank": 6,
+      "case": "case_06",
+      "key": "qwen35_talking_028949_000",
+      "lang": "en",
+      "age_group": "adult",
+      "gender_group": "unspecified",
+      "prompt": "A 6-12 year old Chinese American child with non-binary gender presentation, short hair, wearing a colorful striped T-shirt and a visible hearing aid. Standing in a science lab setting. The child looks directly at the camera with wide eyes, high arousal surprise, hands open palms up as if showing something precious. Lighting is bright and cool. Speech:  No subtitles, single shot.",
+      "quality_score": 1.003431,
+      "diversity_gain": 2.090918,
+      "metrics": {
+        "same_sync_c": 9.212831497192383,
+        "same_sync_d": 7.0581841468811035,
+        "same_ssim": 0.9482258422210418,
+        "same_psnr": 31.982538612522912,
+        "cross_sync_c": 10.095027923583984,
+        "cross_sync_d": 6.3819050788879395,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_06/source.mp4",
+        "same": "assets/case_06/same.mp4",
+        "cross": "assets/case_06/cross.mp4",
+        "audio_same": "assets/case_06/audio_same.wav",
+        "audio_cross": "assets/case_06/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_06.jpg",
+      "source_sha256": "6b2964b934c10c3d06bb6552fa852a92c69e24bda86b07a7c8aadda6467b07cf",
+      "same_sha256": "e3de6bf64470ad4aac742be07ad1014a438321d823dc902d62ad9e5ca63c4205",
+      "cross_sha256": "1776164711261ec6931180931e45a0777d2a9109594bf60c7ae8c61e82d3866e",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 7,
+      "case": "case_07",
+      "key": "qwen35_talking_032151_000",
+      "lang": "en",
+      "age_group": "adult",
+      "gender_group": "male",
+      "prompt": "A 26-35 year old Anglo-Saxon American man with a limb difference (left arm amputated below elbow), waist-up shot, face front-facing, eyes looking directly at the camera. He wears a business casual shirt, background is an office, soft box lighting. Lighting is soft box, camera quality is高清数码。",
+      "quality_score": 0.963172,
+      "diversity_gain": 1.885957,
+      "metrics": {
+        "same_sync_c": 10.94166088104248,
+        "same_sync_d": 5.498827934265137,
+        "same_ssim": 0.9114263123947227,
+        "same_psnr": 29.379417653555098,
+        "cross_sync_c": 11.218399047851562,
+        "cross_sync_d": 6.729361057281494,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_07/source.mp4",
+        "same": "assets/case_07/same.mp4",
+        "cross": "assets/case_07/cross.mp4",
+        "audio_same": "assets/case_07/audio_same.wav",
+        "audio_cross": "assets/case_07/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_07.jpg",
+      "source_sha256": "df34176432df65abdf17261b6c60eb0e91dd340df6727d8fee5ccc5650af648c",
+      "same_sha256": "5fb6ca5f4c161a4c6d8e0c8a0b9a5a812b499db0c49fd2cbdc5a0731617b7b6b",
+      "cross_sha256": "03dec5f2eb57d8183dd6307de14176c6269992633a32e2a39ecb75c3e402d993",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 8,
+      "case": "case_08",
+      "key": "qwen35_talking_056713_000",
+      "lang": "en",
+      "age_group": "older",
+      "gender_group": "male",
+      "prompt": "An elderly Pakistani man in his sixties, upper body frame, facing the camera directly. He wears a simple t-shirt. Background is a home garden with roses. Lighting is natural afternoon light. His eyes look at the lens, expression calm and content. His right hand taps his chest gently, emotional gesture, not blocking face. Speech text:  1080p resolution, 30fps, warm digital quality.",
+      "quality_score": 0.868959,
+      "diversity_gain": 0.0,
+      "metrics": {
+        "same_sync_c": 9.762619018554688,
+        "same_sync_d": 6.392564296722412,
+        "same_ssim": 0.9012291337784466,
+        "same_psnr": 28.544603931623605,
+        "cross_sync_c": 9.483150482177734,
+        "cross_sync_d": 6.913549423217773,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_08/source.mp4",
+        "same": "assets/case_08/same.mp4",
+        "cross": "assets/case_08/cross.mp4",
+        "audio_same": "assets/case_08/audio_same.wav",
+        "audio_cross": "assets/case_08/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_08.jpg",
+      "source_sha256": "2b870eff138a7a72f74c21ddad231c7547d224aaad6fa4317a90256380fee609",
+      "same_sha256": "2e9dd36c44c0f3cf0abe833c26399ae4ea14514db051471a96d7c212ea6e57f0",
+      "cross_sha256": "3b462b4979ef5166955a207f50c2596a0200c420da9dc1e482c6e1dfa79e14fb",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 9,
+      "case": "case_09",
+      "key": "qwen35_talking_014870_000",
+      "lang": "en",
+      "age_group": "adult",
+      "gender_group": "unspecified",
+      "prompt": "A waist-up shot of a 40-year-old Indigenous Australian woman outdoors in a cold environment. She wears a heavy winter coat and a beanie. Her face is front-facing, eyes looking at the camera with high-alert fear and urgency. She uses both hands to simulate the shape of ice or horizontal movement. Cold natural light, snowy background.",
+      "quality_score": 0.809618,
+      "diversity_gain": 2.253407,
+      "metrics": {
+        "same_sync_c": 9.384747505187988,
+        "same_sync_d": 7.031815528869629,
+        "same_ssim": 0.9309465768453558,
+        "same_psnr": 34.89682622929075,
+        "cross_sync_c": 9.791422843933105,
+        "cross_sync_d": 6.3322038650512695,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_09/source.mp4",
+        "same": "assets/case_09/same.mp4",
+        "cross": "assets/case_09/cross.mp4",
+        "audio_same": "assets/case_09/audio_same.wav",
+        "audio_cross": "assets/case_09/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_09.jpg",
+      "source_sha256": "3b391af1551ea4402e06dd9a3ea2938157d4838e360fac67d3b53db6a31e326d",
+      "same_sha256": "b78f70ac23df159bca83c3f3756435f022b7b617f2ab90af7ca70533362f5fef",
+      "cross_sha256": "0efe1e9c72ccf635368dce3a4517c5a364446b250b986dc674d2a60cec3f32f9",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 10,
+      "case": "case_10",
+      "key": "qwen35_talking_004314_000",
+      "lang": "en",
+      "age_group": "adult",
+      "gender_group": "unspecified",
+      "prompt": "A 32-year-old Peruvian woman wearing a traditional shawl over a dark top stands outdoors with mountain background in natural daylight. She faces the camera with focused, contemplative expression. Hands are展开 to the sides.",
+      "quality_score": 0.803683,
+      "diversity_gain": 1.977929,
+      "metrics": {
+        "same_sync_c": 11.162063598632812,
+        "same_sync_d": 6.937883377075195,
+        "same_ssim": 0.9164759717199962,
+        "same_psnr": 28.076358212673295,
+        "cross_sync_c": 11.071121215820312,
+        "cross_sync_d": 6.180477142333984,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_10/source.mp4",
+        "same": "assets/case_10/same.mp4",
+        "cross": "assets/case_10/cross.mp4",
+        "audio_same": "assets/case_10/audio_same.wav",
+        "audio_cross": "assets/case_10/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_10.jpg",
+      "source_sha256": "9ab57245a1f99394e88d059d95f739514cfb973d2296bbb04681793b65ed2ff2",
+      "same_sha256": "b7b3d987f3c6c3ea29d65cf05dd5206c1bd0f108f3cf5659111c8e578d379ab2",
+      "cross_sha256": "f3b67b990b7ba53b6164c4e1090c37c7c67d895e02780842ce1d59c8205daaab",
+      "presentation": "crop"
+    },
+    {
+      "rank": 11,
+      "case": "case_11",
+      "key": "qwen35_talking_002401_000",
+      "lang": "zh",
+      "age_group": "young",
+      "gender_group": "female",
+      "prompt": "一位 6-12 岁的东亚汉族岭南粤语区女孩，身穿校服，在教室环境中。 光线为室内暖光，高清数码。 女孩面部正对镜头，眼神直视，表情尴尬羞愧。 双手交叠置于胸前，不遮脸。 她正在自然说话：'' 无字幕。",
+      "quality_score": 0.982234,
+      "diversity_gain": 0.0,
+      "metrics": {
+        "same_sync_c": 9.278169631958008,
+        "same_sync_d": 6.5716166496276855,
+        "same_ssim": 0.9333921881464052,
+        "same_psnr": 31.02056092738722,
+        "cross_sync_c": 10.198578834533691,
+        "cross_sync_d": 6.333952903747559,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_11/source.mp4",
+        "same": "assets/case_11/same.mp4",
+        "cross": "assets/case_11/cross.mp4",
+        "audio_same": "assets/case_11/audio_same.wav",
+        "audio_cross": "assets/case_11/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_11.jpg",
+      "source_sha256": "dd7afed7e0f80f4141b3a334b03c8e9af055e220c04d827af68de03078f820d4",
+      "same_sha256": "e7b4da626bec3e63fe5b17815469a15df8ccbca14384ef78ca17f96c2a31d193",
+      "cross_sha256": "f2af5c0d19674b7e04a839070bb3559dc68b6405e6090c747d8912187be2281e",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 12,
+      "case": "case_12",
+      "key": "qwen35_talking_044101_000",
+      "lang": "zh",
+      "age_group": "adult",
+      "gender_group": "female",
+      "prompt": "一位 32 岁的印尼爪哇族女性，站在夜市的街道旁。 她穿着简单的 T 恤，背景有模糊的摊位灯光。 夜间人造光照亮她的脸。 她正对镜头，眼神直视镜头，半身构图。 说话时表情略带嫌弃，单手食指指向镜头前方表示强调，手部位置较低，不遮脸。 背景是热闹的夜市虚化。 视频清晰，1080p，30fps。",
+      "quality_score": 0.976335,
+      "diversity_gain": 0.0,
+      "metrics": {
+        "same_sync_c": 10.263713836669922,
+        "same_sync_d": 6.508330821990967,
+        "same_ssim": 0.9153581931695004,
+        "same_psnr": 28.924156532281874,
+        "cross_sync_c": 10.831997871398926,
+        "cross_sync_d": 6.189604759216309,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_12/source.mp4",
+        "same": "assets/case_12/same.mp4",
+        "cross": "assets/case_12/cross.mp4",
+        "audio_same": "assets/case_12/audio_same.wav",
+        "audio_cross": "assets/case_12/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_12.jpg",
+      "source_sha256": "61ead88b3f2e87104720617e504a9a71058239f70fca7b6e1c0f9e5187d957cf",
+      "same_sha256": "8a2768656be00ac910d3a598c96f15935b4ef5c5dc0eccfc2daf751335a37831",
+      "cross_sha256": "a33cc147ccf950e745f0ac11864fe48980fa5fff9d2338829a585ec500e93309",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 13,
+      "case": "case_13",
+      "key": "qwen35_talking_059239_000",
+      "lang": "zh",
+      "age_group": "young",
+      "gender_group": "female",
+      "prompt": "一位东亚汉族中国大陆江南吴语区青少年女性，面部正对镜头，眼神躲闪后回归直视摄像机，身穿校服扎马尾辫，身处卧室，自然晨光。 她正在倾诉考试失利，双手交叠置于胸前腹部，动作拘谨，不遮挡面部。 情绪尴尬羞愧，语速低沉。",
+      "quality_score": 0.781765,
+      "diversity_gain": 1.988873,
+      "metrics": {
+        "same_sync_c": 8.836078643798828,
+        "same_sync_d": 6.76536226272583,
+        "same_ssim": 0.9340286641945215,
+        "same_psnr": 29.885363484368824,
+        "cross_sync_c": 9.48851203918457,
+        "cross_sync_d": 6.86143684387207,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_13/source.mp4",
+        "same": "assets/case_13/same.mp4",
+        "cross": "assets/case_13/cross.mp4",
+        "audio_same": "assets/case_13/audio_same.wav",
+        "audio_cross": "assets/case_13/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_13.jpg",
+      "source_sha256": "b41d3843df57f67f2520029b669f8cc4ef8098541ed959c3411f71a8471779a7",
+      "same_sha256": "4d89b0c8448bff3f5fe244ab2b80b076732427df44c8a2c0dddf4aa8f6b6f75f",
+      "cross_sha256": "44b1825985232c79838ae4d86844c314d3a2151bd5723d6ad08505c91e7f3c96",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 14,
+      "case": "case_14",
+      "key": "qwen35_talking_051332_000",
+      "lang": "zh",
+      "age_group": "older",
+      "gender_group": "female",
+      "prompt": "一位八十多岁的岭南汉族老奶奶，坐在轮椅上，上半身入镜，面部正对镜头，目光温和而忧伤地直视镜头。 她身穿深色传统唐装，双手交叠放在腹部，身体微微前倾。 室内暖光，背景是模糊的老式客厅。",
+      "quality_score": 0.583248,
+      "diversity_gain": 0.0,
+      "metrics": {
+        "same_sync_c": 7.963097095489502,
+        "same_sync_d": 6.66173791885376,
+        "same_ssim": 0.9249578598918065,
+        "same_psnr": 29.791710411734627,
+        "cross_sync_c": 10.27396011352539,
+        "cross_sync_d": 6.23405647277832,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_14/source.mp4",
+        "same": "assets/case_14/same.mp4",
+        "cross": "assets/case_14/cross.mp4",
+        "audio_same": "assets/case_14/audio_same.wav",
+        "audio_cross": "assets/case_14/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_14.jpg",
+      "source_sha256": "233f29ca024bf70240e46004d99a5dc278bdf176b74b8fd0b0622ad2ff01434f",
+      "same_sha256": "775a14552df849f55c15807829f4df3e1874e813cb3cc835aa64a6be3355121c",
+      "cross_sha256": "b664e470ce898c7135b69f34adffe712a8cec3354161ddf7a04d0877e2165a0d",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 15,
+      "case": "case_15",
+      "key": "qwen35_talking_010996_000",
+      "lang": "zh",
+      "age_group": "young",
+      "gender_group": "unspecified",
+      "prompt": "一位 13 至 17 岁的老挝少年，正脸面对镜头，目光恳切直视镜头，身穿整洁校服衬衫，背景为教室环境，光线略显清冷。 情绪表现出中度的担忧与焦虑，眉眼微蹙。",
+      "quality_score": 0.481055,
+      "diversity_gain": 2.007368,
+      "metrics": {
+        "same_sync_c": 7.578332424163818,
+        "same_sync_d": 7.966151714324951,
+        "same_ssim": 0.9403814366474249,
+        "same_psnr": 31.418855835220068,
+        "cross_sync_c": 9.321273803710938,
+        "cross_sync_d": 6.501290798187256,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_15/source.mp4",
+        "same": "assets/case_15/same.mp4",
+        "cross": "assets/case_15/cross.mp4",
+        "audio_same": "assets/case_15/audio_same.wav",
+        "audio_cross": "assets/case_15/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_15.jpg",
+      "source_sha256": "57d8d75e0c41f7f3239daba4dd2447fdda6abc3f024ec2d4e95939482bc5d590",
+      "same_sha256": "077b7b31679f99e498840409f44726e5fe8ca7602ee11106e6c41e4441ed3823",
+      "cross_sha256": "0592b06c4a860ac26f727e28f1cf3ff0a223bbf2717b19c1cbfd30dc47b2286b",
+      "presentation": "crop"
+    },
+    {
+      "rank": 16,
+      "case": "case_16",
+      "key": "qwen35_talking_056618_000",
+      "lang": "zh",
+      "age_group": "adult",
+      "gender_group": "unspecified",
+      "prompt": "一位 20 岁的印尼爪哇族青年，性别流动气质，化妆精致，面部正对镜头，眼神锐利直视镜头。 穿着色彩鲜艳的未来感服饰。 背景为深灰色纯色影棚，硬光打亮面部，高对比度。 右手手掌向前做出停止手势，动作果断有力，眉头紧锁，嘴角下撇。",
+      "quality_score": 0.270823,
+      "diversity_gain": 2.035924,
+      "metrics": {
+        "same_sync_c": 6.392570495605469,
+        "same_sync_d": 8.295973777770996,
+        "same_ssim": 0.9340129811300526,
+        "same_psnr": 28.716516395701785,
+        "cross_sync_c": 9.231977462768555,
+        "cross_sync_d": 7.247486591339111,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_16/source.mp4",
+        "same": "assets/case_16/same.mp4",
+        "cross": "assets/case_16/cross.mp4",
+        "audio_same": "assets/case_16/audio_same.wav",
+        "audio_cross": "assets/case_16/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_16.jpg",
+      "source_sha256": "c45abab14fcd5f56b7df17def847d74403648e048d4f592c83ce6e4a635d44ae",
+      "same_sha256": "7d9834dd021bc6a1438d523d26f87728d7dd858e77a429db62e4a15d49f7baf5",
+      "cross_sha256": "93fe0ea916f7ff1c6f4146fe050935190e18e3e0461e8ffa2bc92dfb2a2d53b0",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 17,
+      "case": "case_17",
+      "key": "qwen35_talking_055201_000",
+      "lang": "zh",
+      "age_group": "young",
+      "gender_group": "unspecified",
+      "prompt": "一位 6-12 岁的海湾地区阿拉伯族男童，穿着传统服饰，坐在客厅里。 双手掌心向上做出展示邀请手势，带着温和微笑，直视镜头。 他正在说中文（在华生活）：'' 半身镜头，室内暖光，背景有阿拉伯风格装饰虚化，1080p，24fps。",
+      "quality_score": 0.252937,
+      "diversity_gain": 2.019357,
+      "metrics": {
+        "same_sync_c": 9.689697265625,
+        "same_sync_d": 6.111517429351807,
+        "same_ssim": 0.9298873437195622,
+        "same_psnr": 30.701239992806173,
+        "cross_sync_c": 8.840799331665039,
+        "cross_sync_d": 7.584283351898193,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_17/source.mp4",
+        "same": "assets/case_17/same.mp4",
+        "cross": "assets/case_17/cross.mp4",
+        "audio_same": "assets/case_17/audio_same.wav",
+        "audio_cross": "assets/case_17/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_17.jpg",
+      "source_sha256": "e7d62876cf404288475249981a92d27be83d3f8eadf616fdd2379b1fa415bef9",
+      "same_sha256": "4803c5fd31f96de7e35871ec06c0368662a3ca15475fc0f499db56c824fcf195",
+      "cross_sha256": "9646033268777c626187977f18fed9d31b5253197bd61598ce6e2101ea7b4a98",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 18,
+      "case": "case_18",
+      "key": "qwen35_talking_085126_000",
+      "lang": "zh",
+      "age_group": "young",
+      "gender_group": "unspecified",
+      "prompt": "一位 13 至 17 岁的非裔美国非二元性别青少年，穿着连帽衫，站在街头。 半身镜头，正脸对镜头，目光锐利。 双手向两侧展开，表示无奈和诉求。 自然光，纪录片风格。 严肃警告：'' 手势在胸部高度，不遮脸。",
+      "quality_score": 0.142755,
+      "diversity_gain": 2.180097,
+      "metrics": {
+        "same_sync_c": 10.374725341796875,
+        "same_sync_d": 6.133702754974365,
+        "same_ssim": 0.9258506615304023,
+        "same_psnr": 30.95878349787177,
+        "cross_sync_c": 7.892798900604248,
+        "cross_sync_d": 7.526483058929443,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_18/source.mp4",
+        "same": "assets/case_18/same.mp4",
+        "cross": "assets/case_18/cross.mp4",
+        "audio_same": "assets/case_18/audio_same.wav",
+        "audio_cross": "assets/case_18/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_18.jpg",
+      "source_sha256": "364d38d98cc1c8b7d107446defb25e5315b200861d23ebffffa1bb411fe9fa60",
+      "same_sha256": "50856fba9c708118273d361925e92d95f1544f658bd4b094e8d1b063dcb48ffd",
+      "cross_sha256": "08db68d923fee93ed9497991d096ca90fdb537527a1775b9425f9af6e24755e3",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 19,
+      "case": "case_19",
+      "key": "qwen35_talking_031157_000",
+      "lang": "zh",
+      "age_group": "older",
+      "gender_group": "male",
+      "prompt": "视频生成提示：一位 80 多岁的中国北方汉族老年男性，面部有岁月痕迹，头发花白稀疏，身穿灰色休闲 T 恤。 背景为纯深灰色影棚背景，光线柔和均匀，1080p 高清，24fps。 构图为胸部以上半身镜头，人物正对镜头，眼神温和直视镜头，双手自然下垂静止于画面下方。",
+      "quality_score": 0.116912,
+      "diversity_gain": 2.026406,
+      "metrics": {
+        "same_sync_c": 7.573482990264893,
+        "same_sync_d": 7.778598308563232,
+        "same_ssim": 0.9381064561260738,
+        "same_psnr": 31.018293269676352,
+        "cross_sync_c": 8.31134033203125,
+        "cross_sync_d": 6.949287414550781,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_19/source.mp4",
+        "same": "assets/case_19/same.mp4",
+        "cross": "assets/case_19/cross.mp4",
+        "audio_same": "assets/case_19/audio_same.wav",
+        "audio_cross": "assets/case_19/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_19.jpg",
+      "source_sha256": "d6bc6dfce2d2d231c9bbbb795059f65425984ca38015e30e76930b4cd3e5bac3",
+      "same_sha256": "f0626ff2d9ba5d8357a866ec0ff8f28a158f82dd64ca5266fb1cbe508a44ece8",
+      "cross_sha256": "50a9a0a519d390cf8bdad9ebb60c9063507c75b06a29e1dece13128d3bb4cf47",
+      "presentation": "native",
+      "native_resolution": [
+        1344,
+        768
+      ]
+    },
+    {
+      "rank": 20,
+      "case": "case_20",
+      "key": "qwen35_talking_011353_000",
+      "lang": "zh",
+      "age_group": "young",
+      "gender_group": "female",
+      "prompt": "一位 7 岁的彝族小女孩，胸部以上镜头，正脸面对镜头，眼睛明亮直视镜头，笑容灿烂。 她穿着整洁的校服，佩戴红领巾，背景是明亮的教室黑板。 光线为自然晨光，肤色健康。 她的右手在胸前下方空中画圆，模拟太阳的形状，动作活泼但不遮挡脸部。 视频风格为纪录片质感，1080p, 24fps。",
+      "quality_score": -0.048121,
+      "diversity_gain": 2.063491,
+      "metrics": {
+        "same_sync_c": 8.311906814575195,
+        "same_sync_d": 7.871120929718018,
+        "same_ssim": 0.8961166251954819,
+        "same_psnr": 26.387586325304568,
+        "cross_sync_c": 8.426498413085938,
+        "cross_sync_d": 6.982412815093994,
+        "cross_offset": 0.0
+      },
+      "files": {
+        "source": "assets/case_20/source.mp4",
+        "same": "assets/case_20/same.mp4",
+        "cross": "assets/case_20/cross.mp4",
+        "audio_same": "assets/case_20/audio_same.wav",
+        "audio_cross": "assets/case_20/audio_cross.wav"
+      },
+      "thumbnail": "thumbnails/case_20.jpg",
+      "source_sha256": "ae143f04b94196706150b42e842c79569b63e050baff7105baa8f95249dd9614",
+      "same_sha256": "7bc20466b5418a13f8224b61288043dc46f9192375ef4c0dca56cf9bb20aa22d",
+      "cross_sha256": "ef3da03b3b33ffa38e237df3aecd5fd03d1648d71dd6d76b6460a8d7a0a136bc",
+      "presentation": "crop"
+    }
+  ]
+}
