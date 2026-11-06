@@ -164,7 +164,7 @@ nav{
 .stat:nth-child(4){animation-delay:.15s}
 .stat b{display:block;font-family:Fraunces,Georgia,serif;font-size:28px;letter-spacing:-.03em;line-height:1.1}
 .stat span{display:block;color:var(--muted);font-size:12px;font-weight:600;margin-top:4px}
-.news-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.news-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
 .news-item{padding:18px 20px}
 .news-item time{display:block;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.08em;margin-bottom:7px}
 .news-item p{margin:0;font-weight:700}
@@ -368,6 +368,10 @@ footer{padding:40px 0 70px;color:var(--muted);font-size:13px;border-top:1px soli
       </p>
       <div class="cta">
         <a class="btn btn-primary" href="https://github.com/LAW1223/VidDub">GitHub</a>
+        <a class="btn btn-ghost" href="https://github.com/LAW1223/OpenDub">OpenDub App</a>
+        <a class="btn btn-ghost" href="https://huggingface.co/AIPeanutman/VidDub">Model</a>
+        <a class="btn btn-ghost" href="https://huggingface.co/datasets/AIPeanutman/VidDub-Training-Data">Dataset</a>
+        <a class="btn btn-ghost" href="https://huggingface.co/datasets/AIPeanutman/VidDub-Bench">Benchmark</a>
         <a class="btn btn-ghost" href="#comparisons">Compare methods</a>
         <a class="btn btn-ghost" href="https://arxiv.org/abs/2611.03404">Paper</a>
       </div>
@@ -392,6 +396,7 @@ footer{padding:40px 0 70px;color:var(--muted);font-size:13px;border-top:1px soli
 <section id="news" class="reveal"><div class="wrap">
   <h3>News</h3>
   <div class="news-list">
+    <article class="panel news-item"><time>2026-11-06</time><p><a href="https://github.com/LAW1223/OpenDub">OpenDub application released.</a></p></article>
     <article class="panel news-item"><time>2026-11-03</time><p><a href="https://github.com/LAW1223/VidDub">Training code released.</a></p></article>
     <article class="panel news-item"><time>2026-11-03</time><p><a href="https://huggingface.co/AIPeanutman/VidDub">Model weights released.</a></p></article>
     <article class="panel news-item"><time>2026-11-02</time><p><a href="https://arxiv.org/abs/2611.03404">Paper released on arXiv.</a></p></article>
