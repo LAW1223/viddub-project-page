@@ -1,7 +1,7 @@
 {
   "title": "VidDub",
-  "subtitle": "Replacement-Aware Distillation for Two-Step Video Dubbing",
-  "summary": "VidDub learns replacement-speech articulation without regressing toward the conflicting source mouth, then transfers the full-context teacher to a two-step student through trajectory regression and distribution matching distillation.",
+  "subtitle": "Replacement-Aware Supervision for Two-Step Video Dubbing",
+  "summary": "VidDub learns from unpaired replacement speech without treating conflicting source-mouth articulation as ground truth, then transfers the full-context teacher to a two-step student through trajectory regression and distribution matching.",
   "highlights": [
     {"value": "2", "label": "denoising steps"},
     {"value": "4", "label": "source regimes"},

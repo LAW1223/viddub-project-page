@@ -1,6 +1,6 @@
 # VidDub Project Page
 
-Static results page for **VidDub: Replacement-Aware Distillation for Two-Step Video Dubbing**.
+Static results page for **VidDub: Replacement-Aware Supervision for Two-Step Video Dubbing**.
 
 ## View locally
 

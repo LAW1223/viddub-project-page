@@ -43,10 +43,10 @@ HTML = r'''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>VidDub — Replacement-Aware Distillation for Two-Step Video Dubbing</title>
+<title>VidDub — Replacement-Aware Supervision for Two-Step Video Dubbing</title>
 <meta name="description" content="VidDub is a full-context video-dubbing editor trained with replacement-aware cross-audio supervision and distilled to two denoising steps.">
 <meta property="og:title" content="VidDub — Two-Step Video Dubbing">
-<meta property="og:description" content="Replacement-aware cross-audio supervision and full-context diffusion distillation for efficient video dubbing.">
+<meta property="og:description" content="Replacement-aware supervision and full-context two-step generation for efficient video dubbing.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="media/causaldub-og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -409,17 +409,18 @@ footer{padding:40px 0 70px;color:var(--muted);font-size:13px;border-top:1px soli
   <h3>Abstract</h3>
   <div class="panel">
     <p style="margin:0;color:var(--ink)">
-      Video dubbing aims to synthesize lip movements that match target speech while
-      preserving the identity, head pose, and background of a source video. Existing
-      editors are predominantly trained through self-reconstruction with the original
-      paired audio, although the recorded mouth conflicts with the desired articulation
-      after speech replacement. VidDub introduces replacement-aware cross-audio
-      supervision: paired-audio samples retain full-frame reconstruction, while unpaired
-      samples mask source-mouth reconstruction and use audio–visual synchronization to
-      supervise articulation, with spatial reconstruction preserving the remaining
-      content. A full-context teacher learns this objective before matched trajectory
-      regression transfers its guided trajectories to a two-step student; distribution
-      matching distillation then restores visual quality after compression. We will
+      Ground-truth dubbing triplets—a source video, replacement speech, and a matching
+      dubbed video—are unavailable at scale. Existing editors therefore rely mainly on
+      same-audio self-reconstruction. This target is valid when the original speech is
+      retained, but under replacement speech the recorded mouth conflicts with the
+      articulation the model must generate. VidDub addresses this mismatch with
+      replacement-aware cross-audio supervision: paired-audio samples retain full-frame
+      reconstruction, while unpaired samples remove source-mouth reconstruction and use
+      audio–visual synchronization to guide articulation, with reconstruction outside
+      the mouth preserving identity, pose, and scene content. A full-context teacher
+      learns this objective before matched trajectory regression transfers its guided
+      trajectories to a two-step student; distribution matching then restores visual
+      quality after compression. We will
       release 85,435 curated training clips, VidDub-Bench, fixed evaluation manifests,
       preprocessing outputs, and unified evaluation code. Across three training seeds,
       removing conflicting source-mouth reconstruction improves replacement-audio Sync-C
@@ -544,7 +545,7 @@ footer{padding:40px 0 70px;color:var(--muted);font-size:13px;border-top:1px soli
   <h3>Cite</h3>
   <p class="section-lead">Paper: <a href="https://arxiv.org/abs/2611.03404">arXiv:2611.03404</a>.</p>
   <div class="bib" id="bib">@article{liu2026viddub,
-  title   = {VidDub: Replacement-Aware Distillation for Two-Step Video Dubbing},
+  title   = {VidDub: Replacement-Aware Supervision for Two-Step Video Dubbing},
   author  = {Liu, Yexin and Lin, Yunlong and Wang, Zehan and He, Guangxin and
              Xu, Xinli and Zha, Jiajun and Liu, Yaofu and Wang, Yueze and
              Ping, Bowen and Li, Yuanming and Wang, Amie and Ghanem, Bernard and
