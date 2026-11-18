@@ -371,6 +371,7 @@ footer{padding:40px 0 70px;color:var(--muted);font-size:13px;border-top:1px soli
         <a class="btn btn-ghost" href="https://huggingface.co/spaces/hugging-apps/viddub-2611">Live Demo</a>
         <a class="btn btn-ghost" href="https://github.com/LAW1223/OpenDub">OpenDub App</a>
         <a class="btn btn-ghost" href="https://huggingface.co/AIPeanutman/VidDub">Model</a>
+        <a class="btn btn-ghost" href="https://huggingface.co/AIPeanutman/VidDub-SFT">Teacher Model</a>
         <a class="btn btn-ghost" href="https://huggingface.co/datasets/AIPeanutman/VidDub-Training-Data">Dataset</a>
         <a class="btn btn-ghost" href="https://huggingface.co/datasets/AIPeanutman/VidDub-Bench">Benchmark</a>
         <a class="btn btn-ghost" href="#comparisons">Compare methods</a>
@@ -397,6 +398,8 @@ footer{padding:40px 0 70px;color:var(--muted);font-size:13px;border-top:1px soli
 <section id="news" class="reveal"><div class="wrap">
   <h3>News</h3>
   <div class="news-list">
+    <article class="panel news-item"><time>2026-11-18</time><p><a href="https://huggingface.co/AIPeanutman/VidDub-SFT">Replacement-aware full-context teacher checkpoint (VidDub-SFT) released on Hugging Face.</a></p></article>
+    <article class="panel news-item"><time>2026-11-10</time><p><a href="https://github.com/LAW1223/ComfyUI-VidDub">Official ComfyUI custom node and curated training dataset released.</a></p></article>
     <article class="panel news-item"><time>2026-11-06</time><p><a href="https://huggingface.co/spaces/hugging-apps/viddub-2611">Community demo launched on Hugging Face Spaces — thanks to Apolinario from the Hugging Face open-source team.</a></p></article>
     <article class="panel news-item"><time>2026-11-06</time><p><a href="https://github.com/LAW1223/OpenDub">OpenDub application released.</a></p></article>
     <article class="panel news-item"><time>2026-11-03</time><p><a href="https://github.com/LAW1223/VidDub">Training code released.</a></p></article>
